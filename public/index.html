@@ -40,4 +40,10 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    const header = document.querySelector('.header')
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('sticky', window.scrollY > 0);
+    })
+  </script>
 </html>
